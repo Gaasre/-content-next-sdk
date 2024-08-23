@@ -3,9 +3,9 @@
     "target": "ESNext",
     "module": "CommonJS",
     "declaration": true,
-    "outDir": "./sdk/dist",
+    "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true
   },
-  "include": ["**/src/**/*"]
+  "include": ["src/**/*"]
 }

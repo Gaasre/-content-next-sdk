@@ -2,14 +2,14 @@
   "name": "@content-next/sdk",
   "version": "1.0.0",
   "description": "SDK for communicating with the ContentNext API.",
-  "main": "sdk/dist/index.js",
-  "types": "sdk/dist/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "sdk/dist"
+    "dist"
   ],
   "scripts": {
     "build": "tsc",
-    "clean": "rm -rf sdk/dist",
+    "clean": "rm -rf dist",
     "prepare": "npm run clean && npm run build",
     "prepublishOnly": "npm run prepare"
   },

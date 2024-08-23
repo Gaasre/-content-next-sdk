@@ -1,8 +1,5 @@
 import { ContentNextAPI } from "./api";
-import {
-  BlogPostsResponse,
-  BlogPostContentResponse,
-} from "./models";
+import { BlogPostsResponse, BlogPostContentResponse } from "./models";
 
 export class ContentNextSDK {
   private api: ContentNextAPI;
@@ -27,3 +24,5 @@ export class ContentNextSDK {
     return this.api.get<BlogPostContentResponse>(`posts/${slug}`);
   }
 }
+
+export * from "./models";
