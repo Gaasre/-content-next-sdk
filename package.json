@@ -18,6 +18,10 @@
   },
   "author": "ContentNext",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaasre/content-next-sdk.git"
+  },
   "dependencies": {
     "axios": "^1.7.5"
   }
