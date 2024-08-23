@@ -1,0 +1,24 @@
+{
+  "name": "@content-next/sdk",
+  "version": "1.0.0",
+  "description": "SDK for communicating with the ContentNext API.",
+  "main": "sdk/dist/index.js",
+  "types": "sdk/dist/index.d.ts",
+  "files": [
+    "sdk/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf sdk/dist",
+    "prepare": "npm run clean && npm run build",
+    "prepublishOnly": "npm run prepare"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "author": "ContentNext",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.5"
+  }
+}
