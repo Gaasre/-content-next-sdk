@@ -28,3 +28,7 @@ export interface BlogPostContent extends BlogPost {
 export interface BlogPostContentResponse {
   data: BlogPostContent;
 }
+
+export interface BlogPostMetaResponse {
+  data: BlogPost;
+}

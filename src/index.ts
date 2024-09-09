@@ -1,5 +1,5 @@
 import { ContentNextAPI } from "./api";
-import { BlogPostsResponse, BlogPostContentResponse } from "./models";
+import { BlogPostsResponse, BlogPostContentResponse, BlogPostMetaResponse } from "./models";
 
 export class ContentNextSDK {
   private api: ContentNextAPI;
@@ -22,6 +22,10 @@ export class ContentNextSDK {
 
   async getBlogPost(slug: string): Promise<BlogPostContentResponse> {
     return this.api.get<BlogPostContentResponse>(`posts/${slug}`);
+  }
+
+  async getBlogPostMeta(slug: string): Promise<BlogPostMetaResponse> {
+    return this.api.get<BlogPostMetaResponse>(`posts/${slug}/meta`);
   }
 }
 
